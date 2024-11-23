@@ -1,5 +1,5 @@
 a.navItem {
-  @apply flex flex-center justify-start px-3 py-4 transition-colors rounded-4;
+  @apply flex flex-center justify-start px-3 py-4 transition-colors rounded-4 select-none;
 
   gap: calc(var(--p-level-4) * .75);
 

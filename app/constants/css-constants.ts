@@ -1,0 +1,1 @@
+export const DASHBOARD_UI_CONTAINER_WIDTH = '1200px';

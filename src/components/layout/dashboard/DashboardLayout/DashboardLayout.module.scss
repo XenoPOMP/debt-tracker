@@ -6,4 +6,8 @@
   ;
   grid-template-rows: max-content 1fr;
   grid-template-columns: max-content 1fr;
+
+  main {
+    @apply p-3 rounded-tl-4 bg-secondary-bg;
+  }
 }
