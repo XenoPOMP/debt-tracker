@@ -1,0 +1,9 @@
+a.navItem {
+  @apply flex flex-center px-3 py-4 transition-colors rounded-4;
+
+  gap: calc(var(--p-level-4) * .75);
+
+  &:is(:hover, [data-is-active~="true"]) {
+    @apply bg-secondary-bg;
+  }
+}

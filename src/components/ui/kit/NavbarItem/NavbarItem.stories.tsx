@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
+import { UsersRound } from 'lucide-react';
 
 import { NavbarItem } from './NavbarItem';
 
@@ -23,6 +24,13 @@ const sharedProps = {
 export const Default: Story = {
   args: {
     ...sharedProps,
-    parentPath: '/',
   },
+  decorators: [
+    () => (
+      <NavbarItem href='/'>
+        <UsersRound size='1.2em' />
+        People
+      </NavbarItem>
+    ),
+  ],
 };

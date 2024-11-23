@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useMemo } from 'react';
 
+import styles from './NavbarItem.module.scss';
 import type { NavbarItemProps } from './NavbarItem.props.ts';
 
 /**
@@ -46,7 +47,11 @@ export const NavbarItem: VariableFC<typeof Link, NavbarItemProps> = ({
 
   return (
     <Link
-      className={cn(className)}
+      className={cn(
+        'text-20 leading-[100%] text-primary-font',
+        styles.navItem,
+        className,
+      )}
       data-is-active={isActivePath}
       {...props}
     >
