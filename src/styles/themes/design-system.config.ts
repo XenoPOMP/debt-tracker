@@ -14,6 +14,7 @@ export const DesignSystemConfig: Partial<CustomThemeConfig> = {
   padding,
   margin: padding,
   gap: padding,
+  borderRadius: padding,
 
   fontSize: {
     24: 'var(--p24)',

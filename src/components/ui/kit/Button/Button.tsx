@@ -7,13 +7,14 @@ import { buttonVariants } from '@/src/components/ui/kit/Button/Button.variants.t
 import type { ButtonProps } from './Button.props';
 
 export const Button = forwardRef<ComponentRef<'button'>, ButtonProps>(
-  ({ className, asChild, variant, ...props }, ref) => {
+  ({ className, asChild, variant, disabled, ...props }, ref) => {
     const Comp = asChild ? Slot : 'button';
 
     return (
       <Comp
-        className={cn(buttonVariants({ variant }), className)}
+        className={cn(buttonVariants({ variant, disabled }), className)}
         ref={ref}
+        disabled
         {...props}
       />
     );

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Golos_Text } from 'next/font/google';
 import type { ReactNode } from 'react';
 
 import { APP_NAME } from '@/app/constants';
@@ -9,7 +9,7 @@ import { generateOpenGraph, generateStaticMetadata } from '@/src/utils/seo';
 
 import './globals.scss';
 
-const mainFont = Inter({ subsets: ['latin'] });
+const mainFont = Golos_Text({ subsets: ['latin'] });
 
 export async function generateMetadata(): Promise<Metadata> {
   const CANONICAL_URL = env.CANONICAL_URL;
