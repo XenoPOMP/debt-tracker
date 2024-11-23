@@ -1,3 +1,9 @@
 aside.dashboard {
+  @apply pl-3 pb-3;
+
   grid-area: sidebar;
+
+  nav ul {
+    @apply flex flex-col gap-5;
+  }
 }
